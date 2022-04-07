@@ -9,14 +9,14 @@ import random
 import subprocess
 
 def parse_args():
-    parser= argparse.ArgumentParser(usage='circos_plot.py [vars] [var_color_ratio] ...')
-    parser.add_argument('--vars', required=True, help='tped format file')
-    parser.add_argument('--var_colors', required=True, help='TSV file of colors and likelihoods for links')
+    parser= argparse.ArgumentParser(usage='circos_plot.py [vars] [var_colors] ...')
+    parser.add_argument('vars', help='tped format file')
+    parser.add_argument('var_colors', help='TSV file of colors and likelihoods for links')
 
     cust_args = parser.add_argument_group('customization')
-    cust_args.add_argument('--your_color', default='184,109,41', help='RGB format for your chromosome color')
-    cust_args.add_argument('--ref_color', default='0,0,0', help='RGB format for reference chromosome color')
-    cust_args.add_argument('--rand_order', action='store_true', help='Randomize order of chromosomes in circle to add abstraction to graphic')
+    cust_args.add_argument('--your_color', default='184,109,41', help='RGB format for your chromosome color. Default = "184,109,41"')
+    cust_args.add_argument('--ref_color', default='0,0,0', help='RGB format for reference chromosome color. Default = "0,0,0"')
+    cust_args.add_argument('--rand_order', action='store_true', help='Randomize order of chromosomes in circle to add abstraction to graphic. Default=Off')
     return parser.parse_args()
 
 
