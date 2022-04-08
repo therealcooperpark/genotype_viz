@@ -55,4 +55,4 @@ This will change the squares which represent the reference dog.
 
 #### rand_order
 
-This will shuffle the order of the reference and your dog chromosomes (but keep them separated from each other). This adds a bit of abstraction to the links and adds some "artistic" elements to the display.
+This will shuffle the order of the reference and your dog chromosomes (but keep them separated from each other). This adds a bit of abstraction to the links and adds some "artistry" to the display.
